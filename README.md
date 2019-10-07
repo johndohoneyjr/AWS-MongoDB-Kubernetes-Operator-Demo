@@ -1,4 +1,4 @@
-# University of Phoenix - Example AWS MongoDB-Kubernetes Operator
+# AWS MongoDB-Kubernetes Operator Example
 
 
 This demo uses the MongoDb - Kubernetes Operator on AWS.  The cluster is provisioned with EKSCTL
