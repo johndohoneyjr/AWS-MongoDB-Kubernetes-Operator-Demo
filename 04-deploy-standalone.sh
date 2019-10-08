@@ -24,6 +24,7 @@ kubectl expose svc standalone-svc-external --port=27017 --target-port=27017 --na
 kubectl get svc -n mongodb
 ping <external LB address> 
 # ping ab01aba49e80d11e9854e0ea84eba664-71958668.us-west-2.elb.amazonaws.com
-# icmp fails, but you dont get unreachable host error, then you can conect
-
+# icmp fails, but you dont get unreachable host error, then you can connect or
+# use the mongoimport to pull in some data through Compass
+#
 # use Compass to finish demo
