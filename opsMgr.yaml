@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: opsmanager-config
+  namespace: mongodb
+
+data:
+  projectName: AWS-EKS
+  orgId: <ORG ID from Cloud Manager Atlas project>
+  baseUrl: https://cloud.mongodb.com

@@ -1,0 +1,15 @@
+---
+apiVersion: mongodb.com/v1
+kind: MongoDB
+metadata:
+  name: standalone
+  namespace: mongodb
+
+spec:
+  version: 4.0.6
+  project: opsmanager-config
+  credentials: mongo-cloud-mgr
+  type: Standalone
+  persistent: true
+
+  exposedExternally: true
