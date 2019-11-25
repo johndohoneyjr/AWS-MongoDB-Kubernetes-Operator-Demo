@@ -8,8 +8,6 @@ kubectl create namespace mongodb
 # Sanity check
 kubectl get namespace
 
-cd $HOME/AWS-MongoDB-Kubernetes-Operator-Demo/scripts
-
 # 
 # Install the Custom Resource Definitions
 #

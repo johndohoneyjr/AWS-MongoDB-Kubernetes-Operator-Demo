@@ -33,3 +33,29 @@ As you create you Kubernetes secret, you will need the values of:
   - API Key - Public Key (user)
   - API Key - Private Key
 
+### Before you start
+
+The OpsManager CRD requires that you add a Project Name and Organization ID:
+
+## Ops-Manager CRD Example (OpsMgr.yaml)
+```
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: opsmanager-config
+  namespace: mongodb
+
+data:
+  projectName: Project-Name-Goes-Here
+  orgId: 5dead000dead697f56dead
+  baseUrl: https://cloud.mongodb.com
+```
+## Kubernetes Secret for Ops Manager Example ( 03-mongodb-secret.sh )
+
+```
+kubectl -n mongodb \
+  create secret generic mongo-cloud-mgr \
+  --from-literal="user=<public-key>" \
+  --from-literal="publicApiKey=<private-key-store-in-a-vault>"
+```

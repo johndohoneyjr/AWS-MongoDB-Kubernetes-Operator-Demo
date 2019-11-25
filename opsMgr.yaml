@@ -7,5 +7,5 @@ metadata:
 
 data:
   projectName: AWS-EKS
-  orgId: <ORG ID from Cloud Manager Atlas project>
+  orgId: 5dd881c0ff7a25697f56dffd
   baseUrl: https://cloud.mongodb.com
