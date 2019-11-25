@@ -14,12 +14,14 @@ This demo uses the MongoDb - Kubernetes Operator on AWS.  The cluster is provisi
 
 ### Demo Process:
   - Make sure your AWS Key and secret are in your ~/.aws/credentials
+  -- git clone this directory, then cd into it, then...
+  -- https://github.com/mongodb/mongodb-enterprise-kubernetes You will use this to load the CRDs and Operator
   - The shell scripts are sequentially prefixed, runs this in prefix - sequential order.
   - Be sure to get all external IP's -- you need to Whitelist all of them in order for this to work without hiccups.  This is done at the Organization | Access | API Keys level
   - 04-deploy-standalone.sh shoould be run a command at a time.
 
 ### Notes
-The MongDB Kuybernetes Operator is in a sub-directory of this repo, no need to dopwnload.
+The MongoDB Kuybernetes Operator is in a sub-directory of this repo, no need to dopwnload.
 (./mongodb-enterprise-kubernetes)
 
 Most of the ConfigMaps have areas that require input of values from your Cloud or Ops Manager, these include:
